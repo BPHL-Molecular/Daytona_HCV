@@ -1,0 +1,8 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region KC248195.1 1 9439
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3052230
+KC248195.1	Genbank	region	1	9439	.	+	.	ID=KC248195.1:1..9439;Dbxref=taxon:3052230;country=United Kingdom;gbkey=Src;genome=genomic;genotype=1;isolate=160526;isolation-source=serum;mol_type=genomic RNA;nat-host=Homo sapiens;old-name=Hepacivirus C;subtype=1?
+KC248195.1	Genbank	CDS	342	9404	.	+	0	ID=cds-AGR53444.1;Dbxref=NCBI_GP:AGR53444.1;Name=AGR53444.1;gbkey=CDS;product=polyprotein;protein_id=AGR53444.1
+
