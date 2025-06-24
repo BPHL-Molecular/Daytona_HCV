@@ -41,4 +41,4 @@ sbatch Daytona_hepatitis.sh HAV
 sbatch Daytona_hepatitis.sh HCV
 ```
 #### Note:      
-If you want to get email notification when the pipeline running ends, please input your email address in the line "#SBATCH --mail-user=<EMAIL>" of the file lyssa.sh.  
+If you want to get email notification when the pipeline running ends, please input your email address in the line "#SBATCH --mail-user=<EMAIL>" of Daytona_hepatitis.sh.  
