@@ -1,5 +1,5 @@
 # The parameters "input", "output", "reference" and "primer" are the absolute paths. Do not include the "/" at the end of the paths.
-input          : "/<full path to Daytona_hep>/fastqs/hcv"
+input          : "/<full path to Daytona_hep>/fastqs"
 output    : "/<full path to Daytona_hep>/output"
 reference      : "/<full path to Daytona_hep>/reference/hcv"
 #primer    : "/<full path to Daytona_hep>/primers"

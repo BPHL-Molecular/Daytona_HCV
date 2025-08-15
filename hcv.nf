@@ -31,15 +31,18 @@ include { nofrag } from './modules/nofrag.nf'
 include { frag } from './modules/frag.nf'
 //include { primer } from './modules/primer.nf'
 include { unprimer } from './modules/unprimer.nf'
-include { assembly } from './modules/assembly.nf'
-include { pystats } from './modules/pystats.nf'
+//include { assembly } from './modules/assembly.nf'
+include { variant } from './modules/variant.nf'
+//include { pystats } from './modules/pystats.nf'
+include { pystats } from './modules/pystats_hcv.nf'
+
 
 workflow {
     if("${params.frag}" == "frag"){
-       quality(A) | frag | unprimer | assembly | pystats | view
+       quality(A) | frag | unprimer | variant | pystats | view
     }
     else{
-       quality(A) | nofrag | unprimer | assembly | pystats | view
+       quality(A) | nofrag | unprimer | variant | pystats | view
     }
 }
 
