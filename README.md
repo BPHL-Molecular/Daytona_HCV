@@ -33,8 +33,8 @@ The Kraken2 database PlusPF is needed. For HiPerGator users, downloading is not 
 sbatch Daytona_HCV.sh
 ```       
 ## Main output
-| sampleID       | k_species|percent(%)|number| ... |        
-| ------------- |:-------------:| -----:|             
+| sampleID | k_species|percent(%)|number| ... |        
+| --- |---|---|             
 |xxx25002686_S1 | Hepacivirus hominis|0.07|875,Hepatitis C virus genotype 4|0.07|872,Hepatitis C virus genotype 6|0.00|2 | ... |         
 
 
