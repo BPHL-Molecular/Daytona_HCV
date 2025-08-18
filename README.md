@@ -40,7 +40,7 @@ sbatch Daytona_HCV.sh
 The second column of the above table indicates that 875 reads (0.07%) in the sample (xxx25002686_S1) are identified as HCV species. Among it, 872 reads (0.07%) are identified as HCV genotype 4, while 2 reads (0.00%) are identified as HCV genotype 6. Note, the reason why the two percentages are the same is due to rounding. Similarly, the same reason applies to 0 percentage.      
 
 ## Test data
-The test data can be found in 
+The test data can be found in /fastqs/example_hcv/. To use them, please copy them to /fastqs first.
 
 ### Note:      
 If you want to get email notification when the pipeline running ends, please input your email address in the line "#SBATCH --mail-user=<EMAIL>" of Daytona_HCV.sh.  
