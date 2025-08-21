@@ -33,12 +33,19 @@ The Kraken2 database PlusPF is needed. For HiPerGator users, downloading is not 
 sbatch Daytona_HCV.sh
 ```       
 ## Main output
+###1. Summary report      
 |sampleID|k_species/percent(%)/number|...|        
 |:---|:---|:---|             
 |xxx25002686_S1|Hepacivirus hominis/0.07/875,Hepatitis C virus genotype 4/0.07/872,Hepatitis C virus genotype 6/0.00/2|...|       
                                               
 The second column of the above table indicates that 875 reads (0.07%) in the sample (xxx25002686_S1) are identified as HCV species. Among it, 872 reads (0.07%) are identified as HCV genotype 4, while 2 reads (0.00%) are identified as HCV genotype 6. Note, the reason why the two percentages are the same is due to rounding. Similarly, the same reason applies to 0 percentage.      
+###2. Variants    
+|REGION|POS|REF|ALT|...|PVAL|PASS|...|        
+|:---|:---|:---|:---|:---|:---|:---|:---|             
+|KC248195.1|28|T|C|...|0.16|FALSE|...|
+|KC248195.1|107|G|A|...|0.04|TRUE|...|                   
 
+PASS is the result of p-value <= 0.05. If a SNP's PASS value is FALSE, it fails to pass the quality check.      
 ## Test data
 The test data can be found in /fastqs/example_hcv/. To use them, please copy them to /fastqs first.
 
