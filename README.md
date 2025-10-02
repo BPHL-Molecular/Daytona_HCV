@@ -58,7 +58,7 @@ gitGraph
        commit id: "iqtree"
        commit id: "phytreeviz"
        checkout Daytona_HCV
-       merge phylogeny_genotype
+       merge Phylogeny_genotype
 
        branch Phylogeny_subtype
        checkout Phylogeny_subtype
@@ -67,7 +67,7 @@ gitGraph
        commit id: "iqtree"
        commit id: "phytreeviz"
        checkout Daytona_HCV
-       merge phylogeny_subtype
+       merge Phylogeny_subtype
        
     
 ```
