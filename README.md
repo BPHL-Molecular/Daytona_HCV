@@ -48,9 +48,9 @@ gitGraph
        branch Consensus
        checkout Consensus
        commit id: "extract_kraken_reads"
-       commit id:"bwa"
-       commit id:"samtools"
-       commit id:"ivar"
+       commit id:"bwa for extract reads"
+       commit id:"samtools for extract reads"
+       commit id:"ivar for extract reads"
        checkout Daytona_HCV
        merge Consensus
 
