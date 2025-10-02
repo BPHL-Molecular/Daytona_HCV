@@ -52,11 +52,12 @@ gitGraph
        checkout Daytona_HCV
        merge Consensus
 
+       commit id: "phylogeny"
        branch Phylogeny
        checkout Phylogeny
        
        
-       commit id: "genotype"
+       commit id: "genotype level"
        branch Phylogeny_genotype
        checkout Phylogeny_genotype
        commit id: "mafft with 7 genotypes"
@@ -66,7 +67,7 @@ gitGraph
        checkout Phylogeny
        merge Phylogeny_genotype
 
-       commit id: "subtype"
+       commit id: "subtype level"
        branch Phylogeny_subtype
        checkout Phylogeny_subtype
        commit id: "mafft with 61 subtypes"
