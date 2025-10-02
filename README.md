@@ -54,18 +54,18 @@ gitGraph
        branch Phylogeny_genotype
        checkout Phylogeny_genotype
        commit id: "mafft with 7 genotypes"
-       commit id: "snp-sites"
-       commit id: "iqtree"
-       commit id: "phytreeviz"
+       commit id: "snp-sites with 7 genotypes"
+       commit id: "iqtree with 7 genotypes"
+       commit id: "phytreeviz with 7 genotypes"
        checkout Daytona_HCV
        merge Phylogeny_genotype
 
        branch Phylogeny_subtype
        checkout Phylogeny_subtype
        commit id: "mafft with 61 subtypes"
-       commit id: "snp-sites"
-       commit id: "iqtree"
-       commit id: "phytreeviz"
+       commit id: "snp-sites with 61 subtypes"
+       commit id: "iqtree with 61 subtypes"
+       commit id: "phytreeviz with 61 subtypes"
        checkout Daytona_HCV
        merge Phylogeny_subtype
        
