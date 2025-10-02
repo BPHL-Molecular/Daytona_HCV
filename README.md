@@ -35,6 +35,7 @@ gitGraph
        checkout Daytona_HCV
        merge QC
 
+       commit id: "SNP calling"
        branch SNP_calling
        checkout SNP_calling
        commit id: "bwa"
@@ -43,6 +44,7 @@ gitGraph
        checkout Daytona_HCV
        merge SNP_calling 
        
+       commit id: "Consensus"
        branch Consensus
        checkout Consensus
        commit id: "extract_kraken_reads"
