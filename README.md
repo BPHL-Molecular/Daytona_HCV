@@ -121,12 +121,13 @@ PASS is the result of p-value <= 0.05. If a SNP's PASS value is FALSE, it fails 
 
 ### 3. Phylogenetic tree at genotype level
 
-
+For the phylogenetic tree at genotype level, the test samples will be compared with 7 HCV genotypes. 
 
 <img width="6244" height="5591" alt="SNPs_boot_7genotypes_annotated" src="https://github.com/user-attachments/assets/4ecd0625-7c20-467f-b980-968d615720d9" />
 
 
 ### 4. Phylogenetic tree at subtype level
+For the phylogenetic tree at subtype level, the test samples will be compared with 61 HCV subtypes. 
 
 <img width="6310" height="5592" alt="SNPs_boot_61subtypes_annotated" src="https://github.com/user-attachments/assets/add4ef7c-d459-43ad-8c32-24ed590ffbb2" />
 
