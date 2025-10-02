@@ -97,9 +97,12 @@ gitGraph
 
 1. put your data files into the directory /fastqs/. Your data file's name should look like "XZA22002292_1.fastq.gz", "XZA22002292_2.fastq.gz" 
 2. open the file "params_hcv.yaml", and set the parameters absolute paths. They should be ".../.../fastqs", ".../.../output", etc. 
-3. get into the top directory of the pipeline, run       
+3. get into the top directory of the pipeline and then select one of the following commands to run.      
 ```bash
-sbatch Daytona_HCV.sh
+sbatch Daytona_HCV.sh   # generate phylogenetic tree at genotype level
+sbatch Daytona_HCV.sh genotype   # generate phylogenetic tree at HCV genotype level
+sbatch Daytona_HCV.sh subtype  # generate phylogenetic tree at HCV subtype level
+sbatch Daytona_HCV.sh both  # generate phylogenetic trees at genotype level and subtype level
 ```       
 ## Main output
 ### 1. Summary report      
@@ -115,6 +118,13 @@ The second column of the above table indicates that 875 reads (0.07%) in the sam
 |KC248195.1|107|G|A|...|0.04|TRUE|...|                   
 
 PASS is the result of p-value <= 0.05. If a SNP's PASS value is FALSE, it fails to pass the quality check.      
+
+### 3. Phylogenetic tree at genotype level
+
+
+### 4. Phylogenetic tree at subtype level
+![Uploading SNPs_boot_61subtypes_annotated.png…]()
+
 ## Test data
 The test data can be found in /fastqs/example_hcv/. To use them, please copy them to /fastqs first.
 
