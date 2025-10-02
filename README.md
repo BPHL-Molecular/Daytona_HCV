@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This pipeline is designed for the analysis of Heptatits C virus data from Illumina paired-end sequencing. It performs HCV-species/genotype identification and abundance estimation, SNP calling, etc.
+This pipeline can perform the genotype detection and phylogeny analysis of Heptatits C virus (HCV). Illumina paired-end sequencing data are required for the pipeline. 
 
 ## Prerequisites
 Nextflow is needed. The details of installation can be found at https://github.com/nextflow-io/nextflow. For HiPerGator users, its installation is not needed. 
@@ -15,9 +15,49 @@ Python3 is needed. The package "pandas" should be installed by ``` pip3 install 
 
 The Kraken2 database PlusPF is needed. For HiPerGator users, downloading is not needed. It has been downloaded and configured in the pipeline.
 
+PhyTreeViz is needed. The installation can be found at https://github.com/moshi4/phyTreeViz.
+
+## Workflow
+# Workflow
+```mermaid
+gitGraph
+       branch Gentyspuds_wf
+       commit id: "Reads"
+       
+       branch QC
+       checkout QC
+       commit id: "Fastqc"
+       commit id: "Trimmomatic"
+       commit id: "bbtools"
+       commit id: "scrub"
+       checkout Gentyspuds_wf
+       merge QC 
+       commit id: "Taxonomic classification" tag:"Kraken"
+       branch Assembly
+       checkout Assembly
+       commit id: "Genome Assembly" tag:" Megahit | Skesa"
+       commit id:"Read Alignment" tag:"BWA"
+       commit id:"Sorting and Indexing" tag:"Samtools"
+       commit id:"Consensus Assembly" tag:"Pilon"
+       checkout Gentyspuds_wf
+       merge Assembly
+       branch phylogeny
+       checkout phylogeny
+       commit id: "MSA" tag:"ClustalW"
+       commit id: "Phylogenetic tree" tag: "Iqtree"
+       commit id: "Alignment and Tree" tag: "MegaX"
+       checkout Gentyspuds_wf
+       merge phylogeny
+       commit id:"Local_Alignment" tag:"Blast"
+       commit id: "EV_typing Classification" tag:"Kraken"
+    
+```
+
+
+
 ## Recommended conda environment installation
    ```bash
-   conda create -n HCV -c conda-forge python=3.10 pandas
+   conda create -n HCV -c conda-forge python=3.10
    ```
    ```bash
    conda activate HCV
