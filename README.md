@@ -15,6 +15,8 @@ Python3 is needed. The package "pandas" should be installed by ``` pip3 install 
 
 The Kraken2 database PlusPF is needed. For HiPerGator users, downloading is not needed. It has been downloaded and configured in the pipeline.
 
+ivar is needed. The installation can be found at https://github.com/andersen-lab/ivar
+
 PhyTreeViz is needed. The installation can be found at https://github.com/moshi4/phyTreeViz.
 
 ## Workflow
@@ -33,12 +35,11 @@ gitGraph
        merge QC
        branch SNP_calling
        checkout SNP_calling
-       commit id: "Fastqc"
-       commit id: "Trimmomatic"
-       commit id: "bbtools"
-       commit id: "multiqc"
+       commit id: "bwa"
+       commit id: "samtools"
+       commit id: "ivar"
        checkout Daytona_HCV
-       merge QC 
+       merge SNP_calling 
        commit id: "Taxonomic classification" tag:"Kraken"
        branch Assembly
        checkout Assembly
