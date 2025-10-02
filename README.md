@@ -127,7 +127,9 @@ PASS is the result of p-value <= 0.05. If a SNP's PASS value is FALSE, it fails 
 
 
 ### 4. Phylogenetic tree at subtype level
-![Uploading SNPs_boot_61subtypes_annotated.png…]()
+
+<img width="6310" height="5592" alt="SNPs_boot_61subtypes_annotated" src="https://github.com/user-attachments/assets/add4ef7c-d459-43ad-8c32-24ed590ffbb2" />
+
 
 ## Test data
 The test data can be found in /fastqs/example_hcv/. To use them, please copy them to /fastqs first.
