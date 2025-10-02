@@ -56,7 +56,7 @@ gitGraph
        checkout Phylogeny
        
        
-
+       commit id: "genotype"
        branch Phylogeny_genotype
        checkout Phylogeny_genotype
        commit id: "mafft with 7 genotypes"
@@ -66,6 +66,7 @@ gitGraph
        checkout Phylogeny
        merge Phylogeny_genotype
 
+       commit id: "subtype"
        branch Phylogeny_subtype
        checkout Phylogeny_subtype
        commit id: "mafft with 61 subtypes"
@@ -74,7 +75,7 @@ gitGraph
        commit id: "phytreeviz with 61 subtypes"
        checkout Phylogeny
        merge Phylogeny_subtype
-       
+       checkout 
     
 ```
 
