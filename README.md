@@ -31,6 +31,7 @@ gitGraph
        commit id: "Trimmomatic"
        commit id: "bbtools"
        commit id: "multiqc"
+
        checkout Daytona_HCV
        merge QC
 
