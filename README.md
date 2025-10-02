@@ -33,31 +33,42 @@ gitGraph
        commit id: "multiqc"
        checkout Daytona_HCV
        merge QC
-       branch SNP_calling
+
+       branch SNP calling
        checkout SNP_calling
        commit id: "bwa"
        commit id: "samtools"
        commit id: "ivar"
        checkout Daytona_HCV
        merge SNP_calling 
-       commit id: "Taxonomic classification" tag:"Kraken"
-       branch Assembly
-       checkout Assembly
-       commit id: "Genome Assembly" tag:" Megahit | Skesa"
-       commit id:"Read Alignment" tag:"BWA"
-       commit id:"Sorting and Indexing" tag:"Samtools"
-       commit id:"Consensus Assembly" tag:"Pilon"
-       checkout Gentyspuds_wf
-       merge Assembly
-       branch phylogeny
-       checkout phylogeny
-       commit id: "MSA" tag:"ClustalW"
-       commit id: "Phylogenetic tree" tag: "Iqtree"
-       commit id: "Alignment and Tree" tag: "MegaX"
-       checkout Gentyspuds_wf
-       merge phylogeny
-       commit id:"Local_Alignment" tag:"Blast"
-       commit id: "EV_typing Classification" tag:"Kraken"
+       
+       branch Consensus
+       checkout Consensus
+       commit id: "extract_kraken_reads"
+       commit id:"bwa"
+       commit id:"samtools"
+       commit id:"ivar"
+       checkout Daytona_HCV
+       merge Consensus
+
+       branch Phylogeny_genotype
+       checkout Phylogeny_genotype
+       commit id: "mafft with 7 genotypes"
+       commit id: "snp-sites"
+       commit id: "iqtree"
+       commit id: "phytreeviz"
+       checkout Daytona_HCV
+       merge phylogeny_genotype
+
+       branch Phylogeny_subtype
+       checkout Phylogeny_subtype
+       commit id: "mafft with 61 subtypes"
+       commit id: "snp-sites"
+       commit id: "iqtree"
+       commit id: "phytreeviz"
+       checkout Daytona_HCV
+       merge phylogeny_subtype
+       
     
 ```
 
