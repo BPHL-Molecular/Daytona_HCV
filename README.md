@@ -59,24 +59,24 @@ gitGraph
        
        
        commit id: "genotype level"
-       branch Phylogeny_genotype
-       checkout Phylogeny_genotype
+       branch Genotype_level
+       checkout Genotype_level
        commit id: "mafft with 7 genotypes"
        commit id: "snp-sites with 7 genotypes"
        commit id: "iqtree with 7 genotypes"
        commit id: "phytreeviz with 7 genotypes"
        checkout Phylogeny
-       merge Phylogeny_genotype
+       merge Genotype_level
 
        commit id: "subtype level"
-       branch Phylogeny_subtype
-       checkout Phylogeny_subtype
+       branch Subtype_level
+       checkout Subtype_level
        commit id: "mafft with 61 subtypes"
        commit id: "snp-sites with 61 subtypes"
        commit id: "iqtree with 61 subtypes"
        commit id: "phytreeviz with 61 subtypes"
        checkout Phylogeny
-       merge Phylogeny_subtype
+       merge Subtype_level
        checkout Daytona_HCV
        merge Phylogeny
     
