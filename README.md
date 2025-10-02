@@ -54,7 +54,7 @@ gitGraph
        branch Phylogeny
        checkout Phylogeny
        checkout Daytona_HCV
-       merge Phylogeny
+       
 
        branch Phylogeny_genotype
        checkout Phylogeny_genotype
