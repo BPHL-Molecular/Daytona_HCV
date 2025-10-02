@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This pipeline can perform the genotype detection and phylogeny analysis of Heptatits C virus (HCV). Illumina paired-end sequencing data are required for the pipeline. 
+This pipeline can perform the genotype detection and phylogeny analysis of Heptatits C virus (HCV). Illumina paired-end sequencing data are required for the pipeline. The phylogenetic relationship is built based on SNP sequences. 7 HCV genotypes and 61 HCV subtypes from NCBI are used as references to analyze phylogenetic relationship of the test samples.
 
 ## Prerequisites
 Nextflow is needed. The details of installation can be found at https://github.com/nextflow-io/nextflow. For HiPerGator users, its installation is not needed. 
@@ -127,6 +127,7 @@ For the phylogenetic tree at genotype level, the test samples will be compared w
 
 
 ### 4. Phylogenetic tree at subtype level
+
 For the phylogenetic tree at subtype level, the test samples will be compared with 61 HCV subtypes. 
 
 <img width="6310" height="5592" alt="SNPs_boot_61subtypes_annotated" src="https://github.com/user-attachments/assets/add4ef7c-d459-43ad-8c32-24ed590ffbb2" />
