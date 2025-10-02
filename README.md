@@ -21,10 +21,9 @@ PhyTreeViz is needed. The installation can be found at https://github.com/moshi4
 
 ## Workflow
 ```mermaid
-gitGraph
-       branch Daytona_HCV
-       commit id: "Paired-end fastq data"
-       
+%%{ init: { 'gitGraph': { 'mainBranchName': 'Daytona_HCV' } } }%%
+gitGraph       
+       commit id: "QC"
        branch QC
        checkout QC
        commit id: "Fastqc"
