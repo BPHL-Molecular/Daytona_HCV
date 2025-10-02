@@ -105,7 +105,7 @@ sbatch Daytona_HCV.sh subtype  # generate phylogenetic tree at HCV subtype level
 sbatch Daytona_HCV.sh both  # generate phylogenetic trees at genotype level and subtype level
 ```       
 ## Main output
-### 1. Summary report      
+### 1. HCV reads detection      
 |sampleID|k_species/percent(%)/number|...|        
 |:---|:---|:---|             
 |xxx25002686_S1|Hepacivirus hominis/0.07/875,Hepatitis C virus genotype 4/0.07/872,Hepatitis C virus genotype 6/0.00/2|...|       
