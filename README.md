@@ -75,7 +75,8 @@ gitGraph
        commit id: "phytreeviz with 61 subtypes"
        checkout Phylogeny
        merge Phylogeny_subtype
-       checkout 
+       checkout Daytona_HCV
+       merge Phylogeny
     
 ```
 
