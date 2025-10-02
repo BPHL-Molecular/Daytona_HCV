@@ -18,19 +18,26 @@ The Kraken2 database PlusPF is needed. For HiPerGator users, downloading is not 
 PhyTreeViz is needed. The installation can be found at https://github.com/moshi4/phyTreeViz.
 
 ## Workflow
-# Workflow
 ```mermaid
 gitGraph
-       branch Gentyspuds_wf
-       commit id: "Reads"
+       branch Daytona_HCV
+       commit id: "Paired-end fastq data"
        
        branch QC
        checkout QC
        commit id: "Fastqc"
        commit id: "Trimmomatic"
        commit id: "bbtools"
-       commit id: "scrub"
-       checkout Gentyspuds_wf
+       commit id: "multiqc"
+       checkout Daytona_HCV
+       merge QC
+       branch SNP_calling
+       checkout SNP_calling
+       commit id: "Fastqc"
+       commit id: "Trimmomatic"
+       commit id: "bbtools"
+       commit id: "multiqc"
+       checkout Daytona_HCV
        merge QC 
        commit id: "Taxonomic classification" tag:"Kraken"
        branch Assembly
