@@ -34,7 +34,7 @@ gitGraph
        checkout Daytona_HCV
        merge QC
 
-       branch SNP calling
+       branch SNP_calling
        checkout SNP_calling
        commit id: "bwa"
        commit id: "samtools"
