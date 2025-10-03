@@ -134,7 +134,7 @@ For the phylogenetic tree at subtype level, the test samples will be compared wi
 
 
 ## Test data
-The test data can be found in /fastqs/hcv/example_hcv/. Before use them, please move them to the directory .../fastqs/hcv/.      
+The test data can be found in /fastqs/hcv/test_sample/. Before use them, please move them to the directory .../fastqs/hcv/.      
 
 ## Contact
 If you want to report bugs, suggest enhancements, discuss ideas related to the project, please use the repository's "Issues" tab in GitHub.
