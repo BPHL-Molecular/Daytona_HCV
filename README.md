@@ -134,7 +134,7 @@ For the phylogenetic tree at subtype level, the test samples will be compared wi
 
 
 ## Test data
-The test data can be found in /fastqs/example_hcv/. To use them, please copy them to /fastqs first.
+The test data can be found in /fastqs/example_hcv/. Before use them, please move them to the directory .../fastqs/hcv/.
 
 ### Note:      
 If you want to get email notification when the pipeline running ends, please input your email address in the line "#SBATCH --mail-user=<EMAIL>" of Daytona_HCV.sh.  
