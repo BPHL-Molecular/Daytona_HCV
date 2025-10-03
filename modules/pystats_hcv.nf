@@ -69,17 +69,18 @@ process pystats {
             percent = l_parse[0]
             num_reads = l_parse[1].lstrip()
             tax_level = l_parse[3]
+            tax_id = l_parse[4]
             tax = l_parse[5].lstrip()
 
             substring1 = "Hepacivirus hominis"
             substring2 = "Hepatitis C"
             if (tax_level == 'S' or tax_level == 'S1') and (tax.lower() == substring1.lower() or substring2.lower() in tax.lower()):
-                toge=tax+"|"+str(percent)+"|"+str(num_reads)
+                toge=tax+"|"+tax_id+"|"+str(percent)+"|"+str(num_reads)
                 taxes.append(toge)
     taxex_csv = ','.join(taxes)
 
     with open("${mypath}"+"/report.txt", 'w') as report:
-        header = ['sampleID', 'k_species|percent(%)|number', 'reference', 'start', 'end', 'num_raw_reads', 'num_clean_reads', 'num_mapped_reads', 'percent_mapped_clean_reads', 'cov_bases_mapped', 'percent_genome_cov_map', 'mean_depth', 'mean_base_qual', 'mean_map_qual']
+        header = ['sampleID', 'k_species|tax_ID|percent(%)|number', 'reference', 'start', 'end', 'num_raw_reads', 'num_clean_reads', 'num_mapped_reads', 'percent_mapped_clean_reads', 'cov_bases_mapped', 'percent_genome_cov_map', 'mean_depth', 'mean_base_qual', 'mean_map_qual']
         report.write('\t'.join(map(str,header)) + '\n')
         results = [items[-1], taxex_csv, ref_name, start, end, raw_reads, clean_reads, reads_mapped, percent_map, cov_bases, cov, depth, baseq, mapq]
         report.write('\t'.join(map(str,results)) + '\n')
