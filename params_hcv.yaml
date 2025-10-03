@@ -1,11 +1,9 @@
 # The parameters "input", "output", "reference" and "primer" are the absolute paths. Do not include the "/" at the end of the paths.
-input          : "/<full path to Daytona_hep>/fastqs"
-output    : "/<full path to Daytona_hep>/output"
-reference      : "/<full path to Daytona_hep>/reference/hcv"
-#primer    : "/<full path to Daytona_hep>/primers"
+input          : "/<full path to Daytona_HCV>/fastqs/hcv"
+output    : "/<full path to Daytona_HCV>/output"
+reference      : "/<full path to Daytona_HCV>/reference/hcv"
 
-
-# # specify if input amplicons were fragmented. If yes, the parameter setting is "frag". If no, the parameter setting is "no_frag". (default: frag)
+# specify if input amplicons were fragmented. If yes, the parameter setting is "frag". If no, the parameter setting is "no_frag". (default: frag)
 frag : "frag"
 
 
