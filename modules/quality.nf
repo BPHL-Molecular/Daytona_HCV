@@ -10,7 +10,7 @@ process quality {
    """  
    #echo ${params.input}/${x}_1.fastq.gz >> xfile.txt
    
-   mkdir -p ${params.output}/assemblies
+   #mkdir -p ${params.output}/assemblies
    mkdir -p ${params.output}/variants
    #mkdir -p ${params.output}/vadr_error_reports
    mkdir -p ${params.output}/${x}
@@ -71,8 +71,8 @@ process quality {
    #Run kraken to check original fastq data in input folder for their species
    mkdir -p ${params.output}/${x}/kraken_out/
    #singularity exec --cleanenv docker://staphb/kraken2:2.0.8-beta kraken2 --db /kraken2-db/minikraken2_v1_8GB/ --use-names --report ${params.output}/${x}/kraken_out/${x}.report --output ${params.output}/${x}/kraken_out/${x}_kraken.out --paired ${params.input}/${x}_1.fastq.gz ${params.input}/${x}_2.fastq.gz
+   #singularity exec --cleanenv docker://staphb/kraken2:latest kraken2 --db /blue/bphl-florida/share/kraken_databases/viral_dba/ --use-names --report ${params.output}/${x}/kraken_out/${x}.report --output ${params.output}/${x}/kraken_out/${x}_kraken.out --paired ${params.input}/${x}_1.fastq.gz ${params.input}/${x}_2.fastq.gz
    singularity exec --cleanenv docker://staphb/kraken2:latest kraken2 --db /blue/bphl-florida/share/kraken_bracken_database/PlusPF/ --use-names --report ${params.output}/${x}/kraken_out/${x}.report --output ${params.output}/${x}/kraken_out/${x}_kraken.out --paired ${params.input}/${x}_1.fastq.gz ${params.input}/${x}_2.fastq.gz
-
    
    
    """
