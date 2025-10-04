@@ -23,7 +23,7 @@ PhyTreeViz is needed. The installation can be found at https://github.com/moshi4
 ```mermaid
 %%{ init: { 'gitGraph': { 'mainBranchName': 'Daytona_HCV' } } }%%
 %%{init: { 'themeVariables': { 'commitLabelFontSize': '20px' } } }%%
-
+%%{init: { 'themeVariables': { 'fontSize': '24px' } } }%%
 gitGraph       
        commit id: "QC"
        branch QC
