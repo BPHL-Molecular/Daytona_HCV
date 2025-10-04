@@ -25,7 +25,7 @@ PhyTreeViz is needed. The installation can be found at https://github.com/moshi4
 ---
 config:
    themeVariables:
-      commitLabelFontSize: '26px'
+      commitIdFontSize: '26px'
 ---
 gitGraph       
        commit id: "QC"
