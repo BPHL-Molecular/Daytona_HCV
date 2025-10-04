@@ -22,7 +22,7 @@ PhyTreeViz is needed. The installation can be found at https://github.com/moshi4
 ## Workflow
 ```mermaid
 %%{ init: { 'gitGraph': { 'mainBranchName': 'Daytona_HCV' } } }%%
-%%{init: { 'themeVariables': { 'commitLabelFontSize': '18px' } } }%%
+%%{init: { 'themeVariables': { 'commitLabelFontSize': '20px' } } }%%
 
 gitGraph       
        commit id: "QC"
