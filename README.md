@@ -101,7 +101,7 @@ gitGraph
 2. open the file "params_hcv.yaml", and set the parameters absolute paths. They should be ".../.../fastqs", ".../.../output", etc. 
 3. get into the top directory of the pipeline and then select one of the following commands to run.      
 ```bash
-sbatch Daytona_HCV.sh   # generate phylogenetic tree at genotype level
+sbatch Daytona_HCV.sh   # generate phylogenetic tree at HCV genotype level
 sbatch Daytona_HCV.sh genotype   # generate phylogenetic tree at HCV genotype level
 sbatch Daytona_HCV.sh subtype  # generate phylogenetic tree at HCV subtype level
 sbatch Daytona_HCV.sh both  # generate phylogenetic trees at genotype level and subtype level
