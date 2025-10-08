@@ -20,8 +20,10 @@ ivar is needed. The installation can be found at https://github.com/andersen-lab
 module load ivar
 ```
 
-mafft is needed. The installation can be found at https://mafft.cbrc.jp/alignment/software/. For HiPerGator users, another option is to load the module "mafft" by "module load mafft".
-
+mafft is needed. The installation can be found at https://mafft.cbrc.jp/alignment/software/. For HiPerGator users, another option is to load the module "mafft" by
+```bash
+module load mafft
+```
 PhyTreeViz is needed. The installation can be found at https://github.com/moshi4/phyTreeViz.
 
 ## Workflow
