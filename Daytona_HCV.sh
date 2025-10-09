@@ -12,6 +12,7 @@
 
 module load apptainer
 module load nextflow
+module load mafft
 
 APPTAINER_CACHEDIR=./
 export APPTAINER_CACHEDIR
