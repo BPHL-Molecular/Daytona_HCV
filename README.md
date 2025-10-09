@@ -15,10 +15,8 @@ Python3 is needed. The package "pandas" should be installed by ``` pip3 install 
 
 The Kraken2 database PlusPF is needed. For HiPerGator users, downloading is not needed. It has been downloaded and configured in the pipeline.
 
-MAFFT is needed. The installation can be found at https://mafft.cbrc.jp/alignment/software/. For HiPerGator users, another option is to load the module "mafft" by
-```bash
-module load mafft
-```
+MAFFT is needed. The installation can be found at https://mafft.cbrc.jp/alignment/software/. For HiPerGator users, it has been configured in the pipeline.
+
 PhyTreeViz is needed. The installation can be found at https://github.com/moshi4/phyTreeViz.
 
 ## Workflow
