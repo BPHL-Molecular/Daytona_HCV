@@ -15,9 +15,6 @@ Python3 is needed. The package "pandas" should be installed by ``` pip3 install 
 
 The Kraken2 database PlusPF is needed. For HiPerGator users, downloading is not needed. It has been downloaded and configured in the pipeline.
 
-MAFFT is needed. The installation can be found at https://mafft.cbrc.jp/alignment/software/. For HiPerGator users, it has been configured in the pipeline.
-
-PhyTreeViz is needed. The installation can be found at https://github.com/moshi4/phyTreeViz.
 
 ## Workflow
 ```mermaid
@@ -143,5 +140,5 @@ For the phylogenetic tree at subtype level, the test samples will be compared wi
 ## Contact
 If you want to report bugs, suggest enhancements, discuss ideas related to the project, please use the repository's "Issues" tab in GitHub.
 
-### Note:      
+## Note      
 If you want to get email notification when the pipeline running ends, please input your email address in the line "#SBATCH --mail-user=<EMAIL>" of Daytona_HCV.sh.  
