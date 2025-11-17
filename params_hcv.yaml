@@ -1,4 +1,4 @@
-# The parameters "input", "output", "reference" and "primer" are the absolute paths. Do not include the "/" at the end of the paths.
+# The parameters "input", "output", and "reference" are the absolute paths. Do not include the "/" at the end of the paths.
 input          : "/<full path to Daytona_HCV>/fastqs/hcv"
 output    : "/<full path to Daytona_HCV>/output"
 reference      : "/<full path to Daytona_HCV>/reference/hcv"
