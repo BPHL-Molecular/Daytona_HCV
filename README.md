@@ -94,9 +94,10 @@ gitGraph
 
 ## How to run
 
-1. put your data files into the directory /fastqs/hcv/. Your data file's name should look like "XZA22002292_1.fastq.gz", "XZA22002292_2.fastq.gz". You may use the script <mark>***rename.sh***</mark> to rename your data files. 
-2. open the file "params_hcv.yaml", and set the parameters absolute paths. They should be ".../.../fastqs/hcv", ".../.../output", etc. 
-3. get into the top directory of the pipeline and then select one of the following commands to run.      
+1. put your data files into the directory /fastqs/hcv/. Your data file's name should look like "XZA22002292_1.fastq.gz", "XZA22002292_2.fastq.gz". You may use the script <mark>***rename.sh***</mark> to rename your data files.
+   Note: Do not place FastQ data in any location other than the fastq/hcv/ directory within the Daytona_HCV pipeline folder. Placing data in other locations will cause program errors.    
+3. open the file "params_hcv.yaml", and set the parameters absolute paths. They should be ".../.../fastqs/hcv", ".../.../output", etc. 
+4. get into the top directory of the pipeline and then select one of the following commands to run.      
 ```bash
 sbatch Daytona_HCV.sh   # generate phylogenetic tree at HCV genotype level
 sbatch Daytona_HCV.sh genotype   # generate phylogenetic tree at HCV genotype level
