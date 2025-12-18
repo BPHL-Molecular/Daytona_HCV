@@ -11,7 +11,7 @@ Singularity/APPTAINER is needed. The details of installation can be found at htt
 
 SLURM is needed. For HiPerGator users, its installation is not needed.
 
-Python3 is needed. The package "pandas" should be installed by ``` pip3 install pandas ``` if not included in your python3.
+Python3 is needed. The packages "pandas" and "biopython" should be installed by ``` pip3 install pandas/biopython ``` if not included in your python3.
 
 The Kraken2 database PlusPF is needed. For HiPerGator users, downloading is not needed. It has been downloaded and configured in the pipeline.
 
