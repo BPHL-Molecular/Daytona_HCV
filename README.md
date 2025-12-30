@@ -138,7 +138,7 @@ For the phylogenetic tree at subtype level, the test samples will be compared wi
 <img width="6310" height="5592" alt="SNPs_boot_61subtypes_annotated" src="https://github.com/user-attachments/assets/add4ef7c-d459-43ad-8c32-24ed590ffbb2" />
 
 
-## Test data
+## Test data for HiPerGator users
 5 pairs of test fastq data can be found in /blue/bphl-florida/share/Daytona_HCV_test_sample. To use them, please copy them to the directory .../fastqs/hcv/.         
 
 ## Contact
