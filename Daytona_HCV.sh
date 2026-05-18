@@ -40,10 +40,10 @@ else
    ###### exit with error
    echo "The phylogeny level (genotype or subtype) should be added in commandline. If genotype, the 7 HCV genotypes will be used as references in the phylogeny. If subtype, the 61 HCV subtypes will be used as references in the phylogeny. If both, the two phylogenies will be generated. If empty, the default is genotype."
    echo "For example:"
-   echo "$sbatch Daytona_hepatitis.sh"
-   echo "$sbatch Daytona_hepatitis.sh genotype"
-   echo "$sbatch Daytona_hepatitis.sh subtype"
-   echo "$sbatch Daytona_hepatitis.sh both"
+   echo "$sbatch Daytona_HCV.sh"
+   echo "$sbatch Daytona_HCV.sh genotype"
+   echo "$sbatch Daytona_HCV.sh subtype"
+   echo "$sbatch Daytona_HCV.sh both"
    exit 1 # Exit with an error status
 fi
 
